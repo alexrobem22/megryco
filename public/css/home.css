@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&display=swap');
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none !important; /*tira a linha do A*/
+    list-style: none; /*tira as bolinha do li*/
+    
+    font-family: 'Assistant', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --branco: #FFFFFF;
+    --preto: #111111;
+    --preto-claro: #696969;
+    --azul-escuro: #3A5DB6;
+
+    
+}
+.header{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 5;
+    /* border: 1px solid red; */
+    
+}
+.home-tamanho{
+    width: 98%;
+    display: flex;
+    align-items: center;
+    margin: 30px 0px 0px 0px;
+    /* border: 1px solid red; */
+}
+.home{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    /* border: 1px solid red; */
+}
+.nav{
+    width: max-content;
+    margin: 0px 5px;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.button{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0px 0px 30px 0px;
+    /* border: 1px solid green; */
+}
+.button a{
+
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--branco);
+    margin: 0px 10px;
+    border: 1px solid var(--branco);
+    padding: 5px;
+}
+.nav-ul{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.nav-ul nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-ul nav ul li a {
+
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--branco);
+    margin: 0px 10px;
+}
+.home-texto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    /* border: 1px solid green; */
+    
+}
+.home-texto h1 {
+    margin: 10px 0px;
+    text-align: center;
+    font-family: 'Assistant';
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--branco);
+    
+}
+
+
+
+.setabranca{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 20px;
+    /* border: 1px solid red; */
+    z-index: 2;
+}
+.setabranca svg{
+    width: 25px;
+    height: 36px;
+    /* border: 1px solid red; */
+}
+.banner-fundo{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.banner-fundo img{
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;/*para nao repetir*/
+    background-size: cover;/*tenta deixar a imagem na melhor forma ou uso o auto  */
+    background-position: center center;/*o primeiro paramentro posso passar letf,top etc para direcionar a imagem*/
+}
+/*!xxxxxxxxxxxxxxxxxxxxxxxxxxxx header mobile xxxxxxxxxxxxxxxxxxxx*/
+    .mobile{
+       width: 100%;
+       z-index: 20;
+       /* border: 3px solid green; */
+    }
+    .mobile nav{
+        width: 100%;
+    }
+    .mobile nav a img{
+        width: 200px;
+    }
+    .mobile nav button{
+        background-color: var(--branco);
+        
+    }
+    .mobile nav ul{
+        background-color: var(--branco) !important;
+        padding: 20px !important;
+        border-radius: 0px 0px 5px 5px;
+       
+        
+    }
+    .mobile nav ul li a{
+
+        font-family: 'Assistant' !important;
+        font-weight: 600 !important;
+        font-size: 25px;
+        color: var(--preto) !important;
+        
+    }
+   
+/*!xxxxxxxxxxxxxxxxxxxxxxxxxxxx fim mobile xxxxxxxxxxxxxxxxxxxx*/
+/*!xxxxxxxxxxxxxxxxxxxxxxxxxxxx main xxxxxxxxxxxxxxxxxxxx*/
+.main-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    position: relative;
+   
+    z-index: 2;
+}
+.ellipse{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: -130px;
+    z-index: -1;
+    /* border: 5px solid green; */
+}
+.ellipse img{
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;/*para nao repetir*/
+    background-size: cover;/*tenta deixar a imagem na melhor forma ou uso o auto  */
+    background-position: center center;/*o primeiro paramentro posso passar letf,top etc para direcionar a imagem*/
+}
+.main-tamanho{
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 0px;
+    /* border: 1px solid red; */
+
+}
+.main-texto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.main-texto h2{
+
+    text-align: center;
+    font-family: 'Assistant';
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--preto);
+
+}
+.main-cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.card{
+    width: 340px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #E2E2E2;
+    margin: 40px 10px 30px 10px;
+    background-color: var(--branco);
+    
+    /* border: 1px solid red; */
+}
+.card-icon{
+    width: 100%;
+    padding: 20px 10px 0px 10px;
+    /* border: 1px solid red; */
+}
+.card-icon svg{
+    width: 60px;
+    height: 60px;
+    /* border: 1px solid red; */
+}
+.card-titulo{
+    width: 100%;
+    padding: 20px 10px 0px 10px;
+}
+.card-titulo h3{
+   
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--preto);
+}
+.card-texto{
+    width: 100%;
+    padding: 0px 10px 40px 10px;
+}
+.card-texto p{
+  
+    font-family: 'Assistant';
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--preto-claro);
+}
+
+.card-button{
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+}
+.card-button a{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--azul-escuro);
+    padding: 10px;
+}
+.patrocinador-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+}
+.patrocinador{
+    width: 170px;
+    height: 90px;
+    margin: 10px 20px;
+    /* border: 1px solid red; */
+}
+.see-box{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+
+    /* border: 1px solid red; */
+}
+.see-box a {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--preto);
+    border: 1px solid var(--preto);
+    padding: 10px 20px;
+}
+
+/*!xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx rodape xxxxxxxxxxxxxxxxxxxx*/
+.footer-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--preto);
+    padding: 30px 0px;
+
+    /* border: 1px solid red; */
+}
+.footer-tamanho{
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid green; */
+}
+.footer-conteudo{
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* border:1px solid red; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.caixa{
+    width: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid yellow; */
+    flex-wrap: wrap;
+}
+.footer-img{
+    width: 90px;
+    height: 70px;
+    margin: 5px;
+    /* border:1px solid red; */
+    overflow: hidden;
+    
+}
+
+.footer-texto{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+ 
+    margin: 5px;
+    /* border:1px solid red; */
+}
+.footer-texto p{
+    /* text-align: center; */
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--branco);
+    
+}
+.p{
+    font-family: 'Montserrat';
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    color: var(--branco); 
+}
+.footer-button{
+width: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+margin: 30px 0px;
+/* border: 1px solid red; */
+}
+.footer-button a{
+    font-family: 'Montserrat';
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    color: var(--branco); 
+    border: 1px solid var(--branco);
+    padding: 10px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

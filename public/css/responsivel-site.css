@@ -1,0 +1,184 @@
+/*! (max-width:600px) quando for ABAIXO de 600 ele faz os comandos */
+
+/*! (min-width:600px) quando for MAIOR de 600 ele faz os comandos */
+
+/*! (min-width:600px) and (max-width:800px) aqui fica entre 600 e 800 roda os comandos*/
+
+
+
+@media (max-width: 600px) {
+    .footer-texto p {
+        text-align: center;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 20px;
+        color: var(--branco);
+
+    }
+}
+
+@media(max-width: 950px) {
+    .home {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+}
+
+@media(min-width: 950px) {
+
+    .mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .parte2-div2 {
+        width: 550px;
+        height: 200px;
+        display: flex;
+
+        /* border: 1px solid red; */
+    }
+
+    .parte3-box {
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 180px 0px 0px 0px;
+
+        /* border: 1px solid red; */
+    }
+
+    .parte4-h1 {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .capsula-2 {
+        width: 100%;
+        padding: 0px 20px 0px 0px;
+        margin: 0px 0px 20px 0px;
+        /* border: 1px solid blue; */
+    }
+
+    .parte2-div3 {
+        width: 600px;
+        height: max-content;
+        display: flex;
+
+        /* border: 1px solid red; */
+    }
+
+    .parte2-box-about {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0px;
+        margin-bottom: -200px !important;
+        /* border: 1px solid green !important; */
+    }
+    .parte-6-card-h1{
+        width: 340px;
+        display: flex;
+        /* border: 1px solid red; */
+    }
+   
+    .parte-6-card-texto{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        
+        /* border: 1px solid red; */
+    
+    }
+    .contact-input{
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid red; */
+    }
+    .contact-input label{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 10px 0px;
+    
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 16px;
+        color: var(--preto);
+    
+        /* border: 1px solid rgb(17, 0, 255); */
+    }
+    .contact-lado-box{
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 10px 0px;
+        /* border: 1px solid yellow; */
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    .parte3-box {
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 240px 0px 0px 0px;
+
+        /* border: 1px solid red; */
+    }
+
+    .capsula-2 {
+        width: 310px;
+        padding: 0px 20px 0px 0px;
+        margin: 0px 0px 220px 0px;
+        /* border: 1px solid blue; */
+    }
+    .parte2-div3 {
+        width: 600px;
+        height: max-content;
+        display: flex;
+        margin-top: 100px;
+
+        /* border: 1px solid red; */
+    }
+
+}
+
+/*!xxxxxxxxx carrossel mobi xxxxxxxxxxxxxx*/
+@media (max-width: 600px) {
+
+    .parte5-bloco2 {
+        width: 370px;
+    }
+
+    .carrossel {
+        width: 370px;
+    }
+
+    .parte5-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 30px 0px;
+
+    }
+}
